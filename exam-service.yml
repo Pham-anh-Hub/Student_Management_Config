@@ -1,8 +1,6 @@
 spring:
     application:
         name: exam-service
-    config:
-        import: optional:configserver:http://localhost:8888
     datasource:
         url: jdbc:mysql://localhost:3315/exam_db?createDatabaseIfNotExist=True
         username: app_user
@@ -16,9 +14,3 @@ spring:
         hibernate:
             ddl-auto: update
 
-eureka:
-    client:
-        service-url:
-            defaultZone: http://localhost:8761/eureka/
-        register-with-eureka: true
-        fetch-registry: true
