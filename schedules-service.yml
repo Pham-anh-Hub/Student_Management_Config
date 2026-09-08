@@ -4,8 +4,8 @@ spring:
     config:
         import: optional:configserver:http://localhost:8888
     datasource:
-        url: jdbc:mysql://localhost:3310/schedules_db?createDatabaseIfNotExist=True
-        username: app-user
+        url: jdbc:mysql://localhost:3311/schedules_db?createDatabaseIfNotExist=True
+        username: app_user
         password: 123456789
     jpa:
         properties:
