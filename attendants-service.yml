@@ -4,8 +4,8 @@ spring:
     config:
         import: optional:configserver:http://localhost:8888
     datasource:
-      url: jdbc:mysql://localhost:3306/attendants_db?createDatabaseIfNotExist=True
-      username: app-user
+      url: jdbc:mysql://localhost:3308/attendants_db?createDatabaseIfNotExist=True
+      username: app_user
       password:
     jpa:
       properties:
