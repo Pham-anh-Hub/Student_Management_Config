@@ -1,0 +1,24 @@
+spring:
+    application:
+        name: schedules-service
+    config:
+        import: optional:configserver:http://localhost:8888
+    datasource:
+        url: jdbc:mysql://localhost:3310/schedules_db?createDatabaseIfNotExist=True
+        username: app-user
+        password: 123456789
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+                format_sql: true
+                show_sql: true
+        hibernate:
+            ddl-auto: update
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+        register-with-eureka: true
+        fetch-registry: true
